@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Bg-colors</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main-container{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 100px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            width: 50%;
+            aspect-ratio: 30vh;
+        }
+        button{
+            padding: 1.5rem 4rem;
+            border-radius: 10px;
+            background-color: salmon;
+            box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        }
+        button:hover{
+            scale: 0.98;
+        }
+        button:focus{
+            scale: 0.98;
+        }
+    </style>
+</head>
+<body>
+    <main class="main-container">
+        <div class="buttons">
+            <button id="butt1">Start</button>
+            <button id="butt2">Stop</button>
+        </div>
+    </main>
+</body>
+<script src="./app.js"></script>
+</html>
